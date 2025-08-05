@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer type="module"></script>
+    <script src="utils.js" defer type="module"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Todo App</h1>
+    </header>
+    <main>
+        <section class="add-input-container">
+            <input type="text" placeholder="Please write your todos..." class="add-todo-input" data-add-todo-input>
+            <button class="add-todo-btn" data-add-todo-btn>add</button>
+        </section>
+        <section class="serch-input-container">
+            <input type="text" placeholder="Search todos..." class="search-todo-input" data-search-todo-input>
+        </section>
+        <section class="todo-list-container" data-todo-container>
+        </section>
+    </main>
+    <template data-todo-template>
+        <div class="todo">
+            <div class="left">
+                <input type="checkbox" class="todo-checkbox" data-todo-checkbox>
+                <div class="todo-info">
+                    <p class="todo-text" data-todo-text></p>
+                    <span class="todo-creation-date" data-todo-date></span>
+                </div>
+            </div>
+            <button class="remove-todo-btn" data-remove-todo-btn>del</button>
+        </div>
+    </template>
+    
+</body> 
+</html>
